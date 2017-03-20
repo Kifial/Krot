@@ -1,0 +1,89 @@
+.write-comment {
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0,0,0, 0.14);
+  margin-bottom: 10px;
+  padding: 10px 15px;
+  &__head {
+    display: flex;
+    justify-content: space-between;
+    height: 32px;
+  }
+  &__comments-count {
+    line-height: 32px;
+    font-size: 15px;
+  }
+  &__button {
+    position: relative;
+    cursor: pointer;
+  }
+  &__leave-comment {
+    line-height: 32px;
+    font-size: 15px;
+    color: var(--green);
+  }
+  &__cancel {
+    position: relative;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      height: 3px;
+      width: 32px;
+      background-color: var(--green);
+      top: 14px;
+      left: 0;
+      border-radius: 2px;
+      transform: rotate(45deg);
+    }
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      height: 3px;
+      width: 32px;
+      background-color: var(--green);
+      top: 14px;
+      left: 0;
+      border-radius: 2px;
+      transform: rotate(-45deg);
+    }
+  }
+  &__body {
+    position: relative;
+    padding: 10px 0 0;
+    &--hidden {
+      display: none;
+    }
+  }
+  &__input-box {
+    margin-bottom: 10px;
+  }
+  &__input {
+    width: 100%;
+    border: 1px solid #bdbdbd;
+    border-radius: 4px;
+    padding: 4px 6px;
+    line-height: 20px;
+  }
+  &__submit-box {
+    text-align: right;
+  }
+  &__submit {
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 15px;
+    line-height: 32px;
+    background-color: var(--green);
+    color: #ffffff;
+    border-radius: 15px;
+    font-size: 15px;
+    transition: .2s ease;
+    cursor: pointer;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}

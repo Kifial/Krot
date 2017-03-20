@@ -1,0 +1,25 @@
+.header-auth-box {
+  line-height: 48px;
+  color: var(--black);
+  font-size: 0;
+  &__item {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 15px;
+    margin-right: 8px;
+    cursor: pointer;
+    transition: .2s ease;
+    &:hover {
+      color: var(--green);
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  &__divider {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 15px;
+    margin-right: 8px;
+  }
+}

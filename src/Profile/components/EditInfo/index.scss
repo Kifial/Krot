@@ -1,0 +1,130 @@
+.profile-edit {
+  padding: 30px 20px;
+  &__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__name-box {
+
+  }
+  &__name {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: var(--black);
+  }
+  &__submit-box {
+
+  }
+  &__submit {
+    display: inline-block;
+    vertical-align: center;
+    border: 1px solid var(--green);
+    border-radius: 15px;
+    line-height: 32px;
+    padding: 0 15px;
+    background-color: var(--green);
+    color: #ffffff;
+    transition: .2s ease;
+    cursor: pointer;
+    margin-right: 15px;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+  &__cancel {
+    display: inline-block;
+    vertical-align: middle;
+    border: 1px solid #9b9b9b;
+    border-radius: 15px;
+    line-height: 32px;
+    padding: 0 15px;
+    color: #9b9b9b;
+    transition: .2s ease;
+    cursor: pointer;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+  &__avatar-box {
+    position: relative;
+    width: 160px;
+    height: 160px;
+  }
+  &__avatar {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+    img {
+      display: block;
+      position: absolute;
+      max-height: 160px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  &__avatar-edit-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    &--created {
+      opacity: 0;
+    }
+    &:hover {
+      opacity: 0.8;
+    }
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 6px;
+      height: 30px;
+      border-radius: 4px;
+      background-color: #555555;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 30px;
+      height: 6px;
+      border-radius: 4px;
+      background-color: #555555;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  &__avatar-input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    border-radius: 50%;
+    opacity: 0;
+  }
+  &__label {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+  }
+  &__input {
+    display: inline-block;
+    vertical-align: middle;
+    color: var(--black);
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,24 @@
+:root {
+  --black: #555555;
+  --green: #269426;
+}
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+html,
+body {
+  font-family: 'Open Sans', sans-serif;
+  height: 100%;
+}
+body {
+  background-color: #f4f4f4;
+  color: var(--black);
+}
